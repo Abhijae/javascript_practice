@@ -1,3 +1,4 @@
+
 async function fetchDataFromAPI(url) {
     try {
       const response = await fetch(url);
@@ -13,7 +14,7 @@ async function fetchDataFromAPI(url) {
       throw error;
     }
   }
-  
+  /*
   // Example usage:
   (async () => {
     try {
@@ -26,7 +27,7 @@ async function fetchDataFromAPI(url) {
     }
   })();
 
-
+*/
 
   async function exampleUsage() {
     try {
@@ -36,7 +37,7 @@ async function fetchDataFromAPI(url) {
       const responseData = await fetchDataFromAPI(apiUrl);
   
       // Now you can use the responseData variable
-      console.log(responseData);
+      //console.log(responseData);
       
       // If you're not in an async function, you can also use .then() syntax
       // fetchDataFromAPI(apiUrl).then(responseData => console.log(responseData));
@@ -53,7 +54,13 @@ async function fetchDataFromAPI(url) {
 
   //console.log(response)
 
+  response.then(function(){
+    console.log(response.title)
+  })
+
   console.log('------------------------')
+
+  /*
   
   url = 'https://jsonplaceholder.typicode.com/todos/1'
 
@@ -73,5 +80,7 @@ async function fetchDataFromAPI(url) {
       }
   }
   console.log('------------------------')
-  //console.log(sample)
+  console.log(sample)
   console.log('------------------------')
+
+  */

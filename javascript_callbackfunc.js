@@ -43,7 +43,7 @@ function setGlobalData(responseData) {
   console.log('Global variable set:', globalData);
 }
 
-// Function to make the API call and use the callback
+
 function fetchDataFromAPI(callback) {
   fetch('https://jsonplaceholder.typicode.com/todos/1')
     .then(response => {
@@ -53,7 +53,7 @@ function fetchDataFromAPI(callback) {
       return response.json();
     })
     .then(data => {
-      // Call the callback function with the API response data
+ 
       callback(data);
     })
     .catch(error => {
