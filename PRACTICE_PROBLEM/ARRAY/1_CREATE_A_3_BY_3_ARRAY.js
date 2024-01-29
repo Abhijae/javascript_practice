@@ -4,11 +4,6 @@ let mat1 = [
     [7,8,9]
 ]
 
-console.log(mat1)
-
-console.log(mat1[0][0])
-
-console.log(mat1[0])
 
 
 for(i=0;i<mat1.length;i++){
