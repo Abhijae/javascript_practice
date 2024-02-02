@@ -13,7 +13,7 @@ for(i=0;i<mat1.length;i++){
 console.log('---------------------------------')
 
 for (x=0; x<mat1.length;x++){
-    for(y=0; y<mat1[0].length;y++){
+    for(y=0; y<mat1[0].length;y++){ 
         console.log(mat1[x][y])
     }
 }
@@ -34,7 +34,7 @@ function transposeMatrix(mat){
 
     return tx
 }
-
+ 
 let result=transposeMatrix(mat1)
 console.log("--------------")
 console.log(result)
