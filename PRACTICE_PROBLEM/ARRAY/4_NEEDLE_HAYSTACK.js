@@ -3,7 +3,7 @@ match_sequence="sad"
 function checkOccurance(s,m){
     input=s
     match=m
-    match_count=0
+   
     occurance=0
     for(i=0;i<input.length;i++){
         if(input[i]==match[0]){
